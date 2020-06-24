@@ -6,15 +6,20 @@
     android:layout_height="match_parent"
     tools:context=".MainActivity">
 
-    <com.google.android.material.textfield.TextInputLayout
-        android:layout_width="409dp"
-        android:layout_height="wrap_content"
-        tools:layout_editor_absoluteX="1dp"
-        tools:layout_editor_absoluteY="119dp">
+    <EditText
+        android:id="@+id/editText"
+        android:layout_width="75dp"
+        android:layout_height="48dp"
+        android:ems="10"
+        android:inputType="number"
+        tools:layout_editor_absoluteX="168dp"
+        tools:layout_editor_absoluteY="472dp" />
 
-        <com.google.android.material.textfield.TextInputEditText
-            android:layout_width="match_parent"
-            android:layout_height="316dp"
-            android:hint="hint" />
-    </com.google.android.material.textfield.TextInputLayout>
+    <Button
+        android:id="@+id/button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Button"
+        tools:layout_editor_absoluteX="162dp"
+        tools:layout_editor_absoluteY="602dp" />
 </androidx.constraintlayout.widget.ConstraintLayout>
