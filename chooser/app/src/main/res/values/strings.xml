@@ -1,3 +1,4 @@
 <resources>
     <string name="app_name">Chooser</string>
+    <string name="enter_your_choices">Enter your choices</string>
 </resources>
