@@ -7,6 +7,8 @@ import android.widget.TextView;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import java.util.Arrays;
+
 public class ChooserActivity extends AppCompatActivity {
 
     private TextView choiceTV;
@@ -28,8 +30,9 @@ public class ChooserActivity extends AppCompatActivity {
         String[] choice = choices.split("\n");
         int amountOfChoices = choice.length;
         Dice dice = new Dice(amountOfChoices);
-        String theChoice = choice[dice.throwed()];
+        String theChoice = choice[dice.throwed() - 1];
         choiceTV.setText(theChoice);
+        choice = new String[amountOfChoices];
     }
 
 
