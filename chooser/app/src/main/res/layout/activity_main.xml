@@ -11,12 +11,12 @@
         android:layout_width="224dp"
         android:layout_height="69dp"
         android:layout_marginBottom="68dp"
+        android:onClick="choose"
         android:text="Choose"
         android:textSize="30dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        android:onClick="choose"/>
+        app:layout_constraintStart_toStartOf="parent" />
 
     <TextView
         android:id="@+id/textView"
