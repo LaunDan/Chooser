@@ -17,6 +17,15 @@ public class ChooserActivity extends AppCompatActivity {
         setRequestedOrientation(ActivityInfo.SCREEN_ORIENTATION_NOSENSOR);
 
         String choices = getIntent().getStringExtra("CHOICES");
+
+        choose(choices);
+    }
+
+    private void choose(String choices) {
+        String[] choice = choices.split("\n");
+        int amountOfChoices = choice.length;
         
     }
+
+
 }
