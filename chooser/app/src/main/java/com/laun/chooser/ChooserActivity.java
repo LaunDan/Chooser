@@ -2,6 +2,7 @@ package com.laun.chooser;
 
 import android.content.pm.ActivityInfo;
 import android.os.Bundle;
+import android.view.View;
 import android.view.WindowManager;
 import android.widget.TextView;
 
@@ -12,6 +13,7 @@ import java.util.Arrays;
 public class ChooserActivity extends AppCompatActivity {
 
     private TextView choiceTV;
+    private String choices;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -21,7 +23,7 @@ public class ChooserActivity extends AppCompatActivity {
         setRequestedOrientation(ActivityInfo.SCREEN_ORIENTATION_NOSENSOR);
 
         choiceTV = findViewById(R.id.choice);
-        String choices = getIntent().getStringExtra("CHOICES");
+        choices = getIntent().getStringExtra("CHOICES");
 
         choose(choices);
     }
@@ -32,8 +34,10 @@ public class ChooserActivity extends AppCompatActivity {
         Dice dice = new Dice(amountOfChoices);
         String theChoice = choice[dice.throwed() - 1];
         choiceTV.setText(theChoice);
-        choice = new String[amountOfChoices];
     }
 
+    public void chooseAgain(View view) {
+        choose(choices);
+    }
 
 }
