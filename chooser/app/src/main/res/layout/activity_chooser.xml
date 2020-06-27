@@ -7,14 +7,17 @@
 
     <Button
         android:id="@+id/chooseAgain"
-        android:layout_width="wrap_content"
+        android:layout_width="250dp"
         android:layout_height="wrap_content"
         android:layout_marginBottom="100dp"
         android:onClick="chooseAgain"
+        android:textSize="30dp"
+        android:textColor="#6B0000"
         android:text="Choose again"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent" />
+        app:layout_constraintStart_toStartOf="parent"
+        android:background="@drawable/buttonshape"/>
 
     <EditText
         android:id="@+id/choice"

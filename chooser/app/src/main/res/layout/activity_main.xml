@@ -8,21 +8,24 @@
 
     <Button
         android:id="@+id/button"
-        android:layout_width="224dp"
+        android:layout_width="250dp"
         android:layout_height="69dp"
         android:layout_marginBottom="68dp"
         android:onClick="choose"
+        android:textColor="#6B0000"
         android:text="Choose"
         android:textSize="30dp"
+        android:background="@drawable/buttonshape"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent" />
+        app:layout_constraintStart_toStartOf="parent"
+        android:textStyle="bold"/>
 
     <TextView
         android:id="@+id/textView"
         android:layout_width="339dp"
         android:layout_height="59dp"
-        android:layout_marginTop="50dp"
+        android:layout_marginTop="70dp"
         android:text="@string/enter_your_choices"
         android:textSize="40sp"
         android:textStyle="bold"
@@ -32,9 +35,9 @@
 
     <EditText
         android:id="@+id/choicesET"
-        android:layout_width="wrap_content"
+        android:layout_width="250dp"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="20dp"
+        android:layout_marginBottom="50dp"
         android:ems="10"
         android:gravity="start|top"
         android:inputType="textMultiLine"
