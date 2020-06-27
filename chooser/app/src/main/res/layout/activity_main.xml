@@ -4,8 +4,8 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainActivity"
-    android:background="@color/colorGreenDark">
+    android:background="@color/colorGreenDark"
+    tools:context=".MainActivity">
 
     <Button
         android:id="@+id/button"
@@ -28,12 +28,12 @@
         android:layout_height="59dp"
         android:layout_marginTop="70dp"
         android:text="@string/enter_your_choices"
+        android:textColor="@color/colorBlack"
         android:textSize="40sp"
         android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        android:textColor="@color/colorBlack"/>
+        app:layout_constraintTop_toTopOf="parent" />
 
     <EditText
         android:id="@+id/choicesET"

@@ -26,8 +26,8 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="70dp"
         android:text="You should..."
-        android:textSize="45dp"
         android:textColor="@color/colorBlack"
+        android:textSize="45dp"
         android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -49,9 +49,9 @@
             android:layout_height="wrap_content"
             android:ems="10"
             android:gravity="center_horizontal"
-            android:textStyle="bold"
             android:inputType="textMultiLine"
+            android:textColor="@color/colorAccent"
             android:textSize="45dp"
-            android:textColor="@color/colorAccent"/>
+            android:textStyle="bold" />
     </LinearLayout>
 </androidx.constraintlayout.widget.ConstraintLayout>
