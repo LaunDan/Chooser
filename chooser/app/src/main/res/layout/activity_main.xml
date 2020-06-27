@@ -4,22 +4,23 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainActivity">
+    tools:context=".MainActivity"
+    android:background="@color/colorGreenDark">
 
     <Button
         android:id="@+id/button"
         android:layout_width="250dp"
         android:layout_height="69dp"
-        android:layout_marginBottom="68dp"
-        android:onClick="choose"
-        android:textColor="#6B0000"
-        android:text="Choose"
-        android:textSize="30dp"
+        android:layout_marginBottom="70dp"
         android:background="@drawable/buttonshape"
+        android:onClick="choose"
+        android:text="Choose"
+        android:textColor="#6B0000"
+        android:textSize="30dp"
+        android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        android:textStyle="bold"/>
+        app:layout_constraintStart_toStartOf="parent" />
 
     <TextView
         android:id="@+id/textView"
@@ -31,13 +32,14 @@
         android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent"
+        android:textColor="@color/colorBlack"/>
 
     <EditText
         android:id="@+id/choicesET"
         android:layout_width="250dp"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="50dp"
+        android:layout_marginBottom="70dp"
         android:ems="10"
         android:gravity="start|top"
         android:inputType="textMultiLine"
