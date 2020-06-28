@@ -61,7 +61,7 @@
             android:textColor="#6B0000"
             android:textSize="30dp"
             tools:ignore="ButtonStyle"
-            android:onClick="back"/>
+            android:onClick="finish"/>
 
         <Space
             android:layout_width="20dp"
