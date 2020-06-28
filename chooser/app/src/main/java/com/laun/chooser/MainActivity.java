@@ -30,4 +30,8 @@ public class MainActivity extends AppCompatActivity {
         chooser.putExtra("CHOICES", choices);
         startActivity(chooser);
     }
+
+    public void dellAll(View view) {
+        choicesET.setText(null);
+    }
 }
