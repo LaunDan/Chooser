@@ -34,4 +34,8 @@ public class MainActivity extends AppCompatActivity {
     public void dellAll(View view) {
         choicesET.setText(null);
     }
+
+    public void finish(View view) {
+        finish();
+    }
 }

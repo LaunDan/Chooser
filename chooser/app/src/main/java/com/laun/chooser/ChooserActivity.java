@@ -38,7 +38,7 @@ public class ChooserActivity extends AppCompatActivity {
         choose(choices);
     }
 
-    public void back(View view) {
+    public void finish(View view) {
         finish();
     }
 
