@@ -38,4 +38,8 @@ public class ChooserActivity extends AppCompatActivity {
         choose(choices);
     }
 
+    public void back(View view) {
+        finish();
+    }
+
 }
