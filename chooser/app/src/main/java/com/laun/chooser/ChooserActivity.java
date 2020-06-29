@@ -9,7 +9,7 @@ import android.widget.TextView;
 import androidx.appcompat.app.AppCompatActivity;
 
 public class ChooserActivity extends AppCompatActivity {
-// todo button for end this activity somethink like "back"
+// todo make button for choose from others
     private TextView choiceTV;
     private String choices;
 
