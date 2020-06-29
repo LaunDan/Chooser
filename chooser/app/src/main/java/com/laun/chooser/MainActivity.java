@@ -12,6 +12,7 @@ import android.widget.EditText;
 public class MainActivity extends AppCompatActivity {
     private String choices;
     private EditText choicesET;
+    private String lengthOfText;
 
 
     @Override
@@ -25,10 +26,12 @@ public class MainActivity extends AppCompatActivity {
     }
 
     public void choose(View view) {
-        choices = choicesET.getText().toString();
-        Intent chooser = new Intent(this, ChooserActivity.class);
-        chooser.putExtra("CHOICES", choices);
-        startActivity(chooser);
+        if (isEmpty()) {
+            choices = choicesET.getText().toString();
+            Intent chooser = new Intent(this, ChooserActivity.class);
+            chooser.putExtra("CHOICES", choices);
+            startActivity(chooser);
+        }
     }
 
     public void dellAll(View view) {
@@ -38,4 +41,12 @@ public class MainActivity extends AppCompatActivity {
     public void finish(View view) {
         finish();
     }
+
+    private boolean isEmpty() {
+        lengthOfText = choicesET.getText().toString();
+        if (lengthOfText.length() < 1) {
+            return false;
+        } else return true;
+    }
+
 }
