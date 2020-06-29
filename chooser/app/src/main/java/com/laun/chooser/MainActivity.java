@@ -26,7 +26,7 @@ public class MainActivity extends AppCompatActivity {
     }
 
     public void choose(View view) {
-        if (isEmpty()) {
+        if (!isEmpty()) {
             choices = choicesET.getText().toString();
             Intent chooser = new Intent(this, ChooserActivity.class);
             chooser.putExtra("CHOICES", choices);
@@ -45,8 +45,8 @@ public class MainActivity extends AppCompatActivity {
     private boolean isEmpty() {
         lengthOfText = choicesET.getText().toString();
         if (lengthOfText.length() < 1) {
-            return false;
-        } else return true;
+            return true;
+        } else return false;
     }
 
 }
