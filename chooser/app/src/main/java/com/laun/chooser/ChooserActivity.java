@@ -9,7 +9,7 @@ import android.widget.TextView;
 import androidx.appcompat.app.AppCompatActivity;
 
 public class ChooserActivity extends AppCompatActivity {
-// todo make button for choose from others
+// todo repair method choosefromothers
     private TextView choiceTV;
     private String choices;
     private String theChoice;
