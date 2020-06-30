@@ -12,6 +12,10 @@ public class ChooserActivity extends AppCompatActivity {
 // todo make button for choose from others
     private TextView choiceTV;
     private String choices;
+    private String theChoice;
+    private int randNum;
+    private String[] choice;
+    private int amountOfChoices;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -27,10 +31,11 @@ public class ChooserActivity extends AppCompatActivity {
     }
 
     private void choose(String choices) {
-        String[] choice = choices.split("\n");
-        int amountOfChoices = choice.length;
+        choice = choices.split("\n");
+        amountOfChoices = choice.length;
         Dice dice = new Dice(amountOfChoices);
-        String theChoice = choice[dice.throwed() - 1];
+        randNum = dice.throwed() - 1;
+        theChoice = choice[randNum];
         choiceTV.setText(theChoice);
     }
 
@@ -43,7 +48,19 @@ public class ChooserActivity extends AppCompatActivity {
     }
 
     public void chooseFromOthers(View view) {
-        
+        for(int i = 0; i < choice.length; i++){
+            if(i == randNum){
+                for(int j = i; j < choice.length - 1; j++){
+                    choice[j] = choice[j+1];
+                }
+                break;
+            }
+        }
+        amountOfChoices = choice.length;
+        Dice dice = new Dice(amountOfChoices);
+        randNum = dice.throwed() - 1;
+        theChoice = choice[randNum];
+        choiceTV.setText(theChoice);
     }
 
 }

@@ -93,6 +93,7 @@
             android:background="@drawable/buttonshape"
             android:text="choose from others"
             android:textColor="#6B0000"
-            android:textSize="20dp"/>
+            android:textSize="20dp"
+            android:onClick="chooseFromOthers"/>
     </LinearLayout>
 </androidx.constraintlayout.widget.ConstraintLayout>
