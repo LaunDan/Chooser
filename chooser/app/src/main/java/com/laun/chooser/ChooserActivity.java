@@ -42,4 +42,8 @@ public class ChooserActivity extends AppCompatActivity {
         finish();
     }
 
+    public void chooseFromOthers(View view) {
+        
+    }
+
 }
