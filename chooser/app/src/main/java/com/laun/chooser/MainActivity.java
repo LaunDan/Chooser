@@ -13,7 +13,7 @@ public class MainActivity extends AppCompatActivity {
     private String choices;
     private EditText choicesET;
     private String lengthOfText;
-
+//todo make button for make new choice somethink what do "/n"
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
