@@ -10,7 +10,11 @@ import androidx.appcompat.app.AppCompatActivity;
 
 
 public class ChooserActivity extends AppCompatActivity {
-    // todo repair method choosefromothers
+    // todo repair method choosefromothers (after remain just one choice the activity break)
+
+    //todo change text of buttons for symbols
+
+
     private TextView choiceTV;
     private String choices;
     private String theChoice;
