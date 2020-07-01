@@ -8,8 +8,9 @@ import android.widget.TextView;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+
 public class ChooserActivity extends AppCompatActivity {
-// todo repair method choosefromothers
+    // todo repair method choosefromothers
     private TextView choiceTV;
     private String choices;
     private String theChoice;
@@ -48,19 +49,17 @@ public class ChooserActivity extends AppCompatActivity {
     }
 
     public void chooseFromOthers(View view) {
-        for(int i = 0; i < choice.length; i++){
-            if(i == randNum){
-                for(int j = i; j < choice.length - 1; j++){
-                    choice[j] = choice[j+1];
-                }
-                break;
-            }
+        if(choice.length >= 2) {
+            choice = removeTheElement(choice, randNum);
+            amountOfChoices = choice.length;
+            Dice dice = new Dice(amountOfChoices);
+            randNum = dice.throwed() - 1;
+            theChoice = choice[randNum];
+            choiceTV.setText(theChoice);
         }
-        amountOfChoices = choice.length;
-        Dice dice = new Dice(amountOfChoices);
-        randNum = dice.throwed() - 1;
-        theChoice = choice[randNum];
-        choiceTV.setText(theChoice);
+
     }
+
+    
 
 }
