@@ -2,6 +2,7 @@ package com.laun.chooser;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.annotation.SuppressLint;
 import android.content.Intent;
 import android.content.pm.ActivityInfo;
 import android.os.Bundle;
@@ -13,7 +14,7 @@ public class MainActivity extends AppCompatActivity {
     private String choices;
     private EditText choicesET;
     private String lengthOfText;
-//todo set method addNext fot button
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -49,8 +50,6 @@ public class MainActivity extends AppCompatActivity {
         } else return false;
     }
 
-    public void addNext(View view) {
 
-    }
 
 }
