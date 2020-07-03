@@ -57,7 +57,7 @@ public class ChooserActivity extends AppCompatActivity {
             randNum = dice.throwed() - 1;
             theChoice = choice[randNum];
             choiceTV.setText(theChoice);
-        }
+        } else choose(choices);
 
     }
 
