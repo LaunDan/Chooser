@@ -8,6 +8,8 @@ import android.widget.TextView;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import java.util.stream.IntStream;
+
 
 public class ChooserActivity extends AppCompatActivity {
     // todo repair method choosefromothers (after remain just one choice the activity break). still can't remove element.
@@ -51,7 +53,7 @@ public class ChooserActivity extends AppCompatActivity {
 
     public void chooseFromOthers(View view) {
         if(choice.length >= 2) {
-            choice[randNum] = null;
+            choice = removeTheElement(choice, randNum);
             amountOfChoices = choice.length;
             Dice dice = new Dice(amountOfChoices);
             randNum = dice.throwed() - 1;
