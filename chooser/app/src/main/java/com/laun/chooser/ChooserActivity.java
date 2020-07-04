@@ -13,7 +13,6 @@ import java.util.stream.IntStream;
 
 
 public class ChooserActivity extends AppCompatActivity {
-    // todo repair method choosefromothers (after remain just one choice the activity break). still can't remove element.
 
     private TextView choiceTV;
     private String choices;
