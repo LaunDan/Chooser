@@ -5,6 +5,7 @@ import android.os.Bundle;
 import android.view.View;
 import android.view.WindowManager;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import androidx.appcompat.app.AppCompatActivity;
 
@@ -52,14 +53,19 @@ public class ChooserActivity extends AppCompatActivity {
     }
 
     public void chooseFromOthers(View view) {
-        if(choice.length >= 2) {
+        if (choice.length >= 2) {
             choice = removeTheElement(choice, randNum);
             amountOfChoices = choice.length;
             Dice dice = new Dice(amountOfChoices);
             randNum = dice.throwed() - 1;
             theChoice = choice[randNum];
             choiceTV.setText(theChoice);
-        } else choose(choices);
+        } else {
+            Toast.makeText(ChooserActivity.this,
+                    "This is your last choice!",
+                    Toast.LENGTH_LONG).show();
+        }
+
 
     }
 
