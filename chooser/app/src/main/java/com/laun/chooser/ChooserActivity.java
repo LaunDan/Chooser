@@ -39,6 +39,11 @@ public class ChooserActivity extends AppCompatActivity {
         randNum = dice.throwed() - 1;
         theChoice = choice[randNum];
         choiceTV.setText(theChoice);
+        if (choice.length == 1) {
+            Toast.makeText(ChooserActivity.this,
+                    "Your entered only one choice!",
+                    Toast.LENGTH_LONG).show();
+        }
     }
 
     public void chooseAgain(View view) {
