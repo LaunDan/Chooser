@@ -9,6 +9,7 @@ import android.os.Bundle;
 import android.view.View;
 import android.view.WindowManager;
 import android.widget.EditText;
+import android.widget.Toast;
 
 public class MainActivity extends AppCompatActivity {
     private String choices;
@@ -33,6 +34,10 @@ public class MainActivity extends AppCompatActivity {
             Intent chooser = new Intent(this, ChooserActivity.class);
             chooser.putExtra("CHOICES", choices);
             startActivity(chooser);
+        } else {
+            Toast.makeText(MainActivity.this,
+                    "You must enter some choices!",
+                    Toast.LENGTH_LONG).show();
         }
     }
 
