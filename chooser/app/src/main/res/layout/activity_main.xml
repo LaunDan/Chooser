@@ -9,12 +9,11 @@
 
     <Button
         android:id="@+id/button"
-        android:layout_width="250dp"
-        android:layout_height="69dp"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
         android:layout_marginBottom="70dp"
-        android:background="@drawable/buttonshape"
+        android:background="@drawable/icon__3_"
         android:onClick="choose"
-        android:text="Choose"
         android:textColor="#6B0000"
         android:textSize="30dp"
         android:textStyle="bold"
