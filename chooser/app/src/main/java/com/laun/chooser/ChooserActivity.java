@@ -33,7 +33,9 @@ public class ChooserActivity extends AppCompatActivity {
     }
 
     private void choose(String choices) {
-        choice = choices.split("\n");
+        if (choice == null) {
+            choice = choices.split("\n");
+        }
         amountOfChoices = choice.length;
         Dice dice = new Dice(amountOfChoices);
         randNum = dice.throwed() - 1;
