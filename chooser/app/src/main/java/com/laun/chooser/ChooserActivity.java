@@ -9,9 +9,6 @@ import android.widget.Toast;
 
 import androidx.appcompat.app.AppCompatActivity;
 
-import java.util.stream.IntStream;
-
-
 public class ChooserActivity extends AppCompatActivity {
 
     private TextView choiceTV;
@@ -31,6 +28,7 @@ public class ChooserActivity extends AppCompatActivity {
         choiceTV = findViewById(R.id.choice);
         choices = getIntent().getStringExtra("CHOICES");
 
+        assert choices != null;
         choose(choices);
     }
 
