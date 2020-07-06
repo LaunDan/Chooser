@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/colorGreenDark"
+    android:background="@color/colorBlack"
     tools:context=".MainActivity">
 
     <Button
@@ -27,7 +27,7 @@
         android:layout_height="59dp"
         android:layout_marginTop="70dp"
         android:text="@string/enter_your_choices"
-        android:textColor="@color/colorBlack"
+        android:textColor="@color/colorGreenDark"
         android:textSize="40sp"
         android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
