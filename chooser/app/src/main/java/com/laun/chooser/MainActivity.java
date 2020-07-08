@@ -16,8 +16,6 @@ public class MainActivity extends AppCompatActivity {
     private EditText choicesET;
     private String lengthOfText;
 
-    // todo change text of button for symbol dices.
-
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
