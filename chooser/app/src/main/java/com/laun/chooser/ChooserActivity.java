@@ -11,6 +11,8 @@ import androidx.appcompat.app.AppCompatActivity;
 
 public class ChooserActivity extends AppCompatActivity {
 
+    // todo make button for end of app
+
     private TextView choiceTV;
     private String choices;
     private String theChoice;
