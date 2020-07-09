@@ -1,5 +1,6 @@
 package com.laun.chooser;
 
+import android.content.Intent;
 import android.content.pm.ActivityInfo;
 import android.os.Bundle;
 import android.view.View;
@@ -110,7 +111,9 @@ public class ChooserActivity extends AppCompatActivity {
     }
 
     public void exit(View view) {
-        finish();
-        System.exit(0);
+        Intent intent = new Intent(ChooserActivity.this, MainActivity.class);
+        intent.setFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
+        intent.putExtra("EXIT", true);
+        startActivity(intent);
     }
 }
