@@ -89,4 +89,16 @@
             android:onClick="chooseFromOthers"
             android:textColor="#6B0000" />
     </LinearLayout>
+
+    <Button
+        android:id="@+id/delAllBtn"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="10dp"
+        android:background="@android:drawable/ic_menu_close_clear_cancel"
+        android:onClick="exit"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>
