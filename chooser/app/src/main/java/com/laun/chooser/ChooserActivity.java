@@ -109,4 +109,8 @@ public class ChooserActivity extends AppCompatActivity {
         return anotherArray;
     }
 
+    public void exit(View view) {
+        finish();
+        System.exit(0);
+    }
 }
