@@ -24,6 +24,11 @@ public class MainActivity extends AppCompatActivity {
         setRequestedOrientation(ActivityInfo.SCREEN_ORIENTATION_NOSENSOR);
 
         choicesET = findViewById(R.id.choicesET);
+
+        if (getIntent().getBooleanExtra("EXIT", false))
+        {
+            finish();
+        }
     }
 
     public void choose(View view) {
