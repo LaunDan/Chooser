@@ -16,6 +16,9 @@ public class MainActivity extends AppCompatActivity {
     private EditText choicesET;
     private String lengthOfText;
 
+    //todo make choices from pictures
+
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);

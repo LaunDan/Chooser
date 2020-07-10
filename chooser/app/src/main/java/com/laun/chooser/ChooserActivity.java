@@ -11,7 +11,7 @@ import android.widget.Toast;
 import androidx.appcompat.app.AppCompatActivity;
 
 public class ChooserActivity extends AppCompatActivity {
-    
+
     private TextView choiceTV;
     private String choices;
     private String theChoice;
