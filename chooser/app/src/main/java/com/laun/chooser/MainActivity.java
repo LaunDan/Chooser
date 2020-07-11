@@ -12,12 +12,12 @@ import android.widget.EditText;
 import android.widget.Toast;
 
 public class MainActivity extends AppCompatActivity {
+
     private String choices;
     private EditText choicesET;
     private String lengthOfText;
 
     //todo make choices from pictures
-
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {

@@ -12,7 +12,8 @@ import androidx.appcompat.app.AppCompatActivity;
 
 public class ChooserActivity extends AppCompatActivity {
 
-    // todo find out that I can get picture to textView or make there some tool for it 
+    // todo find out that I can get picture to textView or make there some tool for it
+    
     private TextView choiceTV;
     private String choices;
     private String theChoice;
