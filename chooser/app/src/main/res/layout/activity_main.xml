@@ -67,5 +67,4 @@
         app:layout_constraintStart_toEndOf="@+id/choicesET" />
 
 
-
 </androidx.constraintlayout.widget.ConstraintLayout>

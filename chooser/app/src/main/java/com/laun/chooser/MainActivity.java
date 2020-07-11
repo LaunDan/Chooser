@@ -1,8 +1,5 @@
 package com.laun.chooser;
 
-import androidx.appcompat.app.AppCompatActivity;
-
-import android.annotation.SuppressLint;
 import android.content.Intent;
 import android.content.pm.ActivityInfo;
 import android.os.Bundle;
@@ -11,11 +8,11 @@ import android.view.WindowManager;
 import android.widget.EditText;
 import android.widget.Toast;
 
+import androidx.appcompat.app.AppCompatActivity;
+
 public class MainActivity extends AppCompatActivity {
 
-    private String choices;
     private EditText choicesET;
-    private String lengthOfText;
 
     //todo make choices from pictures
 
@@ -28,15 +25,14 @@ public class MainActivity extends AppCompatActivity {
 
         choicesET = findViewById(R.id.choicesET);
 
-        if (getIntent().getBooleanExtra("EXIT", false))
-        {
+        if (getIntent().getBooleanExtra("EXIT", false)) {
             finish();
         }
     }
 
     public void choose(View view) {
         if (!isEmpty()) {
-            choices = choicesET.getText().toString();
+            String choices = choicesET.getText().toString();
             Intent chooser = new Intent(this, ChooserActivity.class);
             chooser.putExtra("CHOICES", choices);
             startActivity(chooser);
@@ -56,12 +52,11 @@ public class MainActivity extends AppCompatActivity {
     }
 
     private boolean isEmpty() {
-        lengthOfText = choicesET.getText().toString();
+        String lengthOfText = choicesET.getText().toString();
         if (lengthOfText.length() < 1) {
             return true;
         } else return false;
     }
-
 
 
 }
