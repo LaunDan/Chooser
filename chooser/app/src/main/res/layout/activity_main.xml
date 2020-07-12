@@ -66,5 +66,16 @@
         app:layout_constraintBottom_toBottomOf="@+id/choicesET"
         app:layout_constraintStart_toEndOf="@+id/choicesET" />
 
+    <Button
+        android:id="@+id/button4"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="10dp"
+        android:background="@android:drawable/ic_menu_sort_by_size"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:onClick="showMenu"/>
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>
