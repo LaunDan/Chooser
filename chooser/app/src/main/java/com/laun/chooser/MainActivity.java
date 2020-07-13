@@ -18,7 +18,7 @@ public class MainActivity extends AppCompatActivity {
     private EditText choicesET;
 
     //todo make choices from pictures
-
+ // todo make menu xml for any activity their own
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
