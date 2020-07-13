@@ -86,8 +86,7 @@
             android:layout_width="85dp"
             android:layout_height="85dp"
             android:background="@android:drawable/ic_media_next"
-            android:onClick="chooseFromOthers"
-            android:textColor="#6B0000" />
+            android:onClick="chooseFromOthers" />
     </LinearLayout>
 
     <Button
