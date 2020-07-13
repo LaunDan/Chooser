@@ -1,16 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
 <menu xmlns:android="http://schemas.android.com/apk/res/android">
-    <item android:id="@+id/background"
-        android:title="background" />
-
-    <item android:id="@+id/insert"
-        android:title="insert" />
-
-    <item android:id="@+id/save"
-        android:title="save" />
-
-    <item android:id="@+id/ads"
-        android:title="show ads" />
 
     <item android:id="@+id/end"
         android:title="end" />
