@@ -12,7 +12,7 @@
         android:layout_width="100dp"
         android:layout_height="100dp"
         android:layout_marginBottom="70dp"
-        android:background="@drawable/icon__3_"
+        android:background="@drawable/myIcon"
         android:onClick="choose"
         android:textColor="#6B0000"
         android:textSize="30dp"
@@ -48,9 +48,9 @@
 
     <Button
         android:id="@+id/button3"
-        android:layout_width="40dp"
-        android:layout_height="40dp"
-        android:background="@android:drawable/ic_notification_clear_all"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:background="@drawable/button_del_all"
         android:onClick="dellAll"
         app:layout_constraintBottom_toBottomOf="@+id/choicesET"
         app:layout_constraintStart_toEndOf="@+id/choicesET" />
@@ -61,7 +61,7 @@
         android:layout_height="30dp"
         android:layout_marginTop="10dp"
         android:layout_marginEnd="10dp"
-        android:background="@android:drawable/ic_menu_sort_by_size"
+        android:background="@drawable/menu_button"
         android:onClick="showMenu"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
