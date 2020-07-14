@@ -16,7 +16,9 @@ import androidx.appcompat.widget.PopupMenu;
 public class MainActivity extends AppCompatActivity {
 
     private EditText choicesET;
-    
+
+    // todo make button in menu about ads
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
