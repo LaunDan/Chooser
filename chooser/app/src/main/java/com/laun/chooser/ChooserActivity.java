@@ -124,7 +124,7 @@ public class ChooserActivity extends AppCompatActivity {
     public void showMenu(View v) {
         PopupMenu popup = new PopupMenu(this, v);
         MenuInflater inflater = popup.getMenuInflater();
-        inflater.inflate(R.menu.menu, popup.getMenu());
+        inflater.inflate(R.menu.menu_chooser, popup.getMenu());
         popup.show();
         popup.setOnMenuItemClickListener(new PopupMenu.OnMenuItemClickListener() {
             @Override
