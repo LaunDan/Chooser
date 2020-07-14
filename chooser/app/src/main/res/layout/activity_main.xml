@@ -12,7 +12,7 @@
         android:layout_width="100dp"
         android:layout_height="100dp"
         android:layout_marginBottom="70dp"
-        android:background="@drawable/myIcon"
+        android:background="@drawable/myicon"
         android:onClick="choose"
         android:textColor="#6B0000"
         android:textSize="30dp"
