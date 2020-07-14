@@ -15,9 +15,6 @@ import androidx.appcompat.widget.PopupMenu;
 
 public class ChooserActivity extends AppCompatActivity {
 
-    // todo find out that I can get picture to textView or make there some tool for it
-    // todo create your own background for buttons
-
     private TextView choiceTV;
     private String choices;
     private String theChoice;
