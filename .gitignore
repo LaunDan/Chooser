@@ -10,3 +10,4 @@ chooser/app/src/androidTest/java/com/laun/chooser/ExampleInstrumentedTest.java
 chooser/app/src/test/java/com/laun/chooser/ExampleUnitTest.java
 chooser/gradle/wrapper/gradle-wrapper.jar
 chooser/gradle/wrapper/gradle-wrapper.properties
+release/output.json
