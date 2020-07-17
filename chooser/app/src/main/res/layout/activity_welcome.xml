@@ -43,7 +43,7 @@
             android:layout_centerHorizontal="true"
             android:layout_gravity="center"
             android:layout_marginBottom="152dp"
-            android:background="@drawable/mylogo" />
+            android:background="@drawable/newlogo" />
 
     </LinearLayout>
 </androidx.constraintlayout.widget.ConstraintLayout>
