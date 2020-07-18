@@ -17,7 +17,8 @@ public class ChooserActivity extends AppCompatActivity {
 
     // todo make button in menu for print list of chooses in some random order
 
-     // todo make mylogo at welcome activity to look bigger and was in the middle of screen
+    // todo make mylogo at welcome activity to look bigger and was in the middle of screen
+    
     private TextView choiceTV;
     private String choices;
     private String theChoice;
