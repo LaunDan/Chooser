@@ -16,9 +16,7 @@ import androidx.appcompat.widget.PopupMenu;
 public class ChooserActivity extends AppCompatActivity {
 
     // todo make button in menu for print list of chooses in some random order
-
-    // todo make mylogo at welcome activity to look bigger and was in the middle of screen and hte ,,the" will look like t go to e right from top
-
+    
     private TextView choiceTV;
     private String choices;
     private String theChoice;
