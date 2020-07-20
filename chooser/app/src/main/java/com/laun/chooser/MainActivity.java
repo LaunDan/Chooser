@@ -17,7 +17,7 @@ public class MainActivity extends AppCompatActivity {
 
     private EditText choicesET;
 
-    // todo make button in menu about ads
+    // todo make button for choose in ordered list in random places
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
