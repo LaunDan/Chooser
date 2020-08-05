@@ -16,7 +16,7 @@ import androidx.appcompat.widget.PopupMenu;
 public class ChooserActivity extends AppCompatActivity {
 
     // todo make button in menu for print list of chooses in some random order
-
+    // todo make toast about buttonst which are showen when activity starts
 
     private TextView choiceTV;
     private String choices;
