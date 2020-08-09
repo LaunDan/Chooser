@@ -17,6 +17,8 @@ public class MainActivity extends AppCompatActivity {
 
     private EditText choicesET;
 
+    // todo change colors of text and buttons to prettier red
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
